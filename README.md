@@ -25,3 +25,12 @@ The insights gained from this analysis can be beneficial for both hosts and gues
 The project will utilize machine learning techniques to build an accurate and reliable predictive model. By training the model on the Inside Airbnb dataset, we aim to provide users with a tool that can assist in estimating Airbnb prices in the United States. This project has the potential to provide valuable insights into the dynamics of the short-term rental market and contribute to the broader understanding of the factors influencing Airbnb pricing strategies.
 
 ### <ins>**Demo**<ins>: https://py4ds-nhom4-21kdl.streamlit.app/
+
+**Team 4**
+
+| Name | MSSV | Contribution rate (%) |
+| -------- | -------- | -------- |
+| Nguyễn Phúc Gia Nghi | 21280035 | 100% |
+| Lê Hồ Hoàng Anh | 21280085 | 100% |
+| Nguyễn Hải Ngọc Huyền | 21280091 | 100% |
+| Tạ Hoàng Kim Thy | 21280083 | 100% |
