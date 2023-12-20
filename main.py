@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import os
 from catboost import CatBoostRegressor
+from pickle import load
 
 metadata = {}
 with open('metadata.txt', 'r') as fi:
@@ -26,6 +27,7 @@ with open("amenities.txt", 'r') as fi:
             amenities_list.append(subitem[1])
             amenities_dict[subitem[1]] = subitem[0]
 
+scaler = load(open('scaler.pkl', 'rb'))
 # print(amenities_list)
 
 st.title("Airbnb price predictor")
@@ -171,6 +173,7 @@ with st.form('Fill in this form to get our prediction!'):
                 else:
                     df[feature] = [0]
         df = pd.DataFrame(df)
+        df = scaler.transform(df)
 
         model = CatBoostRegressor()
         model.load_model("model.cbm")
